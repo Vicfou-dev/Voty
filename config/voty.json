@@ -1,0 +1,6 @@
+{
+    "nbPlayerMin" : 2,
+    "max" : 9999,
+    "pathFileQuestion" : "test",
+    "type" : "voty"
+}

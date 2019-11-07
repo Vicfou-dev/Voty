@@ -1,0 +1,7 @@
+<script src="./socket-client.js"></script>
+<script>
+  const socket = io('http://localhost:8080');
+  socket.emit("createParty",{
+      type : "voty"
+  })
+</script>

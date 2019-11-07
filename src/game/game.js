@@ -4,7 +4,7 @@ module.exports = class Game {
         this.players = [];
         this.nbPlayerMin = config.nbPlayerMin;
         this.pathFileQuestion = config.pathFileQuestion;
-        this.id = generateRandomInt(config.max);
+        this.id = this.generateRandomInt(config.max);
     }
 
     generateRandomInt(max){
@@ -17,6 +17,10 @@ module.exports = class Game {
 
     deletePlayer(player){
         this.players = this.players.filter( a => a.id == player.id);
+    }
+
+    getId(){
+        return this.id;
     }
 
 
